@@ -1,0 +1,21 @@
+{
+  "vue3-ts-template": {
+    "scope": "vue",
+    "prefix": "vtemplate",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>",
+      ""
+    ],
+    "description": "Create <template> block"
+  }
+}
