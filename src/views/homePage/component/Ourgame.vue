@@ -155,9 +155,13 @@
 
 <style lang="scss" scoped>
   .ourgame {
+    box-sizing: border-box;
     padding: 130px 80px;
     @include mobile {
       padding: 48px 16px;
+    }
+    @include tablet {
+      padding: 130px 25px;
     }
     h2 {
       font-family: 'Playfair Display';
@@ -205,6 +209,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
       }
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
       &__column {
         display: flex;
         flex-direction: column;
@@ -225,9 +232,20 @@
             grid-row-start: 2;
             transform: translateY(-80px);
           }
+          @include tablet {
+            padding-top: 0;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            transform: translateY(-80px);
+          }
         }
         &--row03 {
           @include mobile {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            margin-top: 80px;
+          }
+          @include tablet {
             grid-column-start: 2;
             grid-row-start: 1;
             margin-top: 80px;
@@ -236,6 +254,9 @@
         &--row04 {
           padding-top: 80px;
           @include mobile {
+            padding-top: 0px;
+          }
+          @include tablet {
             padding-top: 0px;
           }
         }
@@ -258,6 +279,10 @@
               bottom: 11px;
               left: 8px;
             }
+            @include tablet {
+              bottom: 11px;
+              left: 8px;
+            }
             h2 {
               font-family: 'Montserrat';
               font-style: normal;
@@ -270,6 +295,10 @@
                 font-size: 24px;
                 line-height: 30px;
               }
+              @include tablet {
+                font-size: 24px;
+                line-height: 30px;
+              }
             }
             p {
               font-family: 'Montserrat';
@@ -279,6 +308,10 @@
               line-height: 140%;
               color: #ffffff;
               @include mobile {
+                font-size: 12px;
+                line-height: 15px;
+              }
+              @include tablet {
                 font-size: 12px;
                 line-height: 15px;
               }

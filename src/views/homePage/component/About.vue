@@ -86,6 +86,9 @@
       @include mobile {
         flex-direction: column;
       }
+      @include tablet {
+        flex-direction: column;
+      }
       &__title {
         max-width: 560px;
         width: 100%;

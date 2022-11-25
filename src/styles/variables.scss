@@ -1,5 +1,5 @@
 /* Mixin */
-$mobile-width: 480;
+$mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -10,7 +10,7 @@ $desktop-width: 1024px;
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
@@ -21,6 +21,8 @@ $desktop-width: 1024px;
   }
 }
 
-html {
+body,
+html,
+* {
   scroll-behavior: smooth;
 }

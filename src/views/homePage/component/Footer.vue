@@ -64,6 +64,11 @@
         align-items: center;
         padding: 40px 16px 62px 16px;
       }
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 16px 62px 16px;
+      }
       &__logo {
         max-width: 163.23px;
         &__social {
@@ -83,6 +88,11 @@
         display: flex;
         gap: 40px;
         @include mobile {
+          flex-direction: column;
+          gap: 70px;
+          margin-top: 70px;
+        }
+        @include tablet {
           flex-direction: column;
           gap: 70px;
           margin-top: 70px;
