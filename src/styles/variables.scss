@@ -20,9 +20,3 @@ $desktop-width: 1024px;
     @content;
   }
 }
-
-body,
-html,
-* {
-  scroll-behavior: smooth;
-}

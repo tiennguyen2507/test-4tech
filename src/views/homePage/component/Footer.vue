@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <section class="footer" id="footer">
+  <footer class="footer" id="footer">
     <div class="footer__info">
       <div class="footer__info__logo">
         <img src="@/assets/logo.png" alt="logo" />
@@ -48,7 +48,7 @@
     <div class="footer__copyright">
       <h2>2017 Copyright. Policy.</h2>
     </div>
-  </section>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -71,6 +71,9 @@
       }
       &__logo {
         max-width: 163.23px;
+        img {
+          max-width: 163.23px;
+        }
         &__social {
           padding-top: 46.91px;
           display: flex;

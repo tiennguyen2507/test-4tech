@@ -36,7 +36,7 @@
         </p>
       </div>
       <div class="hero__content__input">
-        <input type="text" placeholder="Enter your email" />
+        <input type="text" :placeholder="t('hero.enterYourEmail')" />
         <img src="@/assets/icon/arrow-right.png" alt="" />
       </div>
     </div>
@@ -101,9 +101,9 @@
       }
 
       &__countdown {
+        box-sizing: border-box;
         max-width: 756px;
         width: 100%;
-        height: 150px;
 
         padding: 26px 39.1px;
         margin-top: 21px;
@@ -120,6 +120,7 @@
           gap: 4px;
         }
         h2 {
+          padding-bottom: 8px;
           font-family: 'Montserrat';
           font-style: normal;
           font-weight: 400;
@@ -187,6 +188,7 @@
         }
       }
       &__input {
+        box-sizing: border-box;
         max-width: 560px;
         width: 100%;
         height: 56px;

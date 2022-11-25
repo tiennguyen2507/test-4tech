@@ -15,7 +15,7 @@
 </script>
 
 <template>
-  <div class="narbar">
+  <header class="narbar">
     <div class="narbar__logo">
       <a href="#hero">
         <img src="@/assets/logo.png" alt="logo" />
@@ -45,11 +45,12 @@
         <img src="@/assets/icon/close.png" alt="usa" @click="closeMenu" />
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
   .narbar {
+    box-sizing: border-box;
     position: fixed;
     max-width: 1920px;
     top: 0px;
@@ -69,9 +70,10 @@
     }
 
     &__logo {
-      max-width: 108.82px;
-      width: 100%;
-      height: 64px;
+      img {
+        width: 108.82px;
+        height: 64px;
+      }
       cursor: pointer;
 
       @include mobile {
@@ -154,10 +156,14 @@
           font-weight: 700;
           font-size: 14px;
           line-height: 18px;
-          color: #ffffff;
           cursor: pointer;
+          a {
+            color: #ffffff;
+          }
           @include mobile {
-            color: #000000;
+            a {
+              color: #000000;
+            }
             padding-right: 0px;
           }
           @include tablet {
@@ -170,6 +176,7 @@
           width: 100%;
           height: 1px;
           background: #eeeeee;
+          border: 0px;
           @include mobile {
             display: block;
           }

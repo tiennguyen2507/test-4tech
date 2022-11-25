@@ -8,14 +8,14 @@
 </script>
 
 <template>
-  <div class="container">
+  <main class="container">
     <Hero />
     <About />
     <Ourgame />
     <Partners />
     <Footer />
     <ScrollTop />
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
