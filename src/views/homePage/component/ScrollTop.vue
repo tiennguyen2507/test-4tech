@@ -36,7 +36,9 @@
       transition: all 0.3s linear;
       width: 66.67px;
       height: 66.67px;
+
       position: fixed;
+      z-index: 50;
       bottom: 86px;
       right: 86px;
       @include mobile {

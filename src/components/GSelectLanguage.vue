@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { ref } from 'vue';
   import flagVN from '@/assets/language/vietnam.png';
   import flagUsa from '@/assets/language/usa.png';
   import { useLanguage } from '@/hooks/useLanguage';
