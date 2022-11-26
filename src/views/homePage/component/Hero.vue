@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div id="hero" class="hero">
+  <section id="hero" class="hero">
     <NarBar />
     <div class="hero__content">
       <h2>{{ t('hero.title') }}</h2>
@@ -42,7 +42,7 @@
       </div>
     </div>
     <img src="@/assets/ong_tien_1.png" alt="ong_tien_1" class="hero__ongTien" />
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

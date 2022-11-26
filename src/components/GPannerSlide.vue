@@ -52,7 +52,7 @@
 
 <style lang="scss" scoped>
   .slide {
-    max-width: 1500px;
+    max-width: 1540px;
     position: relative;
     padding: 0px 40px;
 

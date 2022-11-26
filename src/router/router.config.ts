@@ -1,4 +1,4 @@
-import HomePage from '@/views/homePage/index.vue';
+import HomePage from '@/views/HomePage/index.vue';
 
 export const constantRoutes = [
   {
