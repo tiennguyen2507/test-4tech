@@ -1,5 +1,6 @@
 <script setup>
   import { onUnmounted, ref } from 'vue';
+
   const isActive = ref(false);
   const handleScroll = () => {
     if (window.pageYOffset > 200) {

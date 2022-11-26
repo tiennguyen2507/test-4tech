@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import GPannerSlide from '@/components/common/GPannerSlide.vue';
+  import GPannerSlide from '@/components/GPannerSlide.vue';
   import { useI18n } from 'vue-i18n';
+
   const { t } = useI18n();
 </script>
 

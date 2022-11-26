@@ -31,7 +31,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@import '@/styles/variables.scss';`,
+          additionalData: `@import '@/styles/mixin.scss';`,
         },
       },
     },

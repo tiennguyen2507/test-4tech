@@ -1,6 +1,7 @@
 <script lang="ts" setup>
   import { useI18n } from 'vue-i18n';
   import NarBar from './NarBar.vue';
+
   const { t } = useI18n();
 </script>
 
@@ -212,6 +213,7 @@
         img {
           width: 24px;
           height: 24px;
+          cursor: pointer;
         }
         @include mobile {
           margin-top: 16px;

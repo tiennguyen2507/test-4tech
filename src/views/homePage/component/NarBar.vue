@@ -2,8 +2,8 @@
   import GSelectLanguage from '@/components/GSelectLanguage.vue';
   import { ref } from 'vue';
   import { useI18n } from 'vue-i18n';
-  const isActive = ref(false);
 
+  const isActive = ref(false);
   const { t } = useI18n();
 
   const openMenu = () => {
@@ -50,7 +50,6 @@
 
 <style lang="scss" scoped>
   .narbar {
-    box-sizing: border-box;
     position: fixed;
     max-width: 1920px;
     top: 0px;
@@ -167,7 +166,9 @@
             padding-right: 0px;
           }
           @include tablet {
-            color: #000000;
+            a {
+              color: #000000;
+            }
             padding-right: 0px;
           }
         }

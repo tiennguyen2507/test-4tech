@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n';
+
   const { t } = useI18n();
 </script>
 
@@ -226,13 +227,13 @@
       &__witch {
         @keyframes witch {
           from {
-            transform: translateX(-50px);
+            transform: translateX(-20px);
           }
           50% {
-            transform: translateX(100px);
+            transform: translateX(40px);
           }
           to {
-            transform: translateX(-50px);
+            transform: translateX(-20px);
           }
         }
         display: flex;

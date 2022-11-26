@@ -12,6 +12,7 @@
   import game11 from '@/assets/our-game/game11.png';
   import game12 from '@/assets/our-game/game12.png';
   import { useI18n } from 'vue-i18n';
+
   const { t } = useI18n();
 
   const data01 = [

@@ -1,9 +1,5 @@
 import { watchEffect, ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-enum LanguageEnum {
-  VI = 'VI',
-  EN = 'EN',
-}
 
 const languageKey = 'x-language';
 
@@ -30,5 +26,5 @@ export function useLanguage() {
     locale.value = currentLanguage.value.toLowerCase();
   });
 
-  return { isVieLang, LanguageEnum };
+  return { isVieLang };
 }

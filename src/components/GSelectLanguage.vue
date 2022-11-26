@@ -100,7 +100,20 @@
       @include mobile {
         width: 80px;
         height: 40px;
-        box-sizing: border-box;
+        padding: 6px 14px;
+
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        background: #f6f6f6;
+        border: 1px solid #afafaf;
+        border-radius: 8px;
+      }
+
+      @include tablet {
+        width: 80px;
+        height: 40px;
         padding: 6px 14px;
 
         display: flex;
@@ -120,9 +133,15 @@
           @include mobile {
             display: block;
           }
+          @include tablet {
+            display: block;
+          }
         }
         &--white {
           @include mobile {
+            display: none;
+          }
+          @include tablet {
             display: none;
           }
         }
@@ -141,6 +160,10 @@
       padding: 3.33px 10px;
 
       @include mobile {
+        left: 0px;
+        top: 110%;
+      }
+      @include tablet {
         left: 0px;
         top: 110%;
       }
