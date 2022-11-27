@@ -14,7 +14,11 @@
         </p>
         <div class="about__content__title__frame">
           <div class="about__content__title__frame__item-- first">
-            <h2>600M+</h2>
+            <span>
+              <h2>600</h2>
+              <h3>M</h3>
+              <h2>+</h2>
+            </span>
             <p>{{ t('about.users') }}</p>
           </div>
           <div class="about__content__title__frame__item--last">
@@ -125,19 +129,23 @@
             margin-top: 40px;
             gap: 55px;
           }
-          h2 {
+          h2,
+          h3 {
+            display: inline;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
             font-size: 80px;
             line-height: 98px;
-
             letter-spacing: -1px;
             color: #079bee;
             @include mobile {
               font-size: 44px;
               line-height: 54px;
             }
+          }
+          h3 {
+            font-size: 40px;
           }
           p {
             font-family: 'Montserrat';

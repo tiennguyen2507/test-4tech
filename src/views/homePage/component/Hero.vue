@@ -58,6 +58,9 @@
     @include mobile {
       height: 832px;
     }
+    @include tablet {
+      height: 832px;
+    }
     &__ongTien {
       max-width: 938px;
       width: 100%;
@@ -68,6 +71,10 @@
       transform: translate(40px);
       @include mobile {
         bottom: -25%;
+      }
+      @include tablet {
+        width: 450px;
+        bottom: -20%;
       }
     }
     &__content {
@@ -85,6 +92,9 @@
       @include mobile {
         padding: 0px 16px;
       }
+      @include tablet {
+        padding: 0px 16px;
+      }
       h2 {
         font-family: 'Playfair Display';
         font-style: normal;
@@ -96,6 +106,10 @@
         text-align: center;
         letter-spacing: 0.6px;
         @include mobile {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        @include tablet {
           font-size: 40px;
           line-height: 50px;
         }
@@ -118,6 +132,9 @@
         justify-content: space-around;
         gap: 52px;
         @include mobile {
+          gap: 4px;
+        }
+        @include tablet {
           gap: 4px;
         }
         h2 {

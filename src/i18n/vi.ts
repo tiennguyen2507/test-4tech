@@ -46,6 +46,6 @@ export default {
     subscribe: 'Theo dõi',
     subscribeContent:
       'Đăng ký nhận bản tin của chúng tôi và là người đầu tiên biết về các cập nhật của chúng tôi',
-    enterYourEmail: 'Email',
+    enterYourEmail: 'Địa chỉ email của bạn',
   },
 };
