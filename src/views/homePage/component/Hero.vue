@@ -1,8 +1,10 @@
 <script lang="ts" setup>
   import { useI18n } from 'vue-i18n';
   import NarBar from './NarBar.vue';
+  import useCountDownTimes from '@/hooks/useCountDownTimes';
 
   const { t } = useI18n();
+  const { day, hours, minutes, seconds } = useCountDownTimes('12/15/2022');
 </script>
 
 <template>
@@ -12,22 +14,22 @@
       <h2>{{ t('hero.title') }}</h2>
       <div class="hero__content__countdown">
         <div class="hero__content__countdown__item">
-          <h2>30</h2>
+          <h2>{{ day }}</h2>
           <p>{{ t('hero.day') }}</p>
         </div>
         <h2>:</h2>
         <div class="hero__content__countdown__item">
-          <h2>18</h2>
+          <h2>{{ hours }}</h2>
           <p>{{ t('hero.hour') }}</p>
         </div>
         <h2>:</h2>
         <div class="hero__content__countdown__item">
-          <h2>20</h2>
+          <h2>{{ minutes }}</h2>
           <p>{{ t('hero.minutes') }}</p>
         </div>
         <h2>:</h2>
         <div class="hero__content__countdown__item">
-          <h2>11</h2>
+          <h2>{{ seconds }}</h2>
           <p>{{ t('hero.second') }}</p>
         </div>
       </div>

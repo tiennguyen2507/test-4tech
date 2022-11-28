@@ -1,7 +1,9 @@
 <script setup>
   import { onUnmounted, ref } from 'vue';
+  import { useRouter } from 'vue-router';
 
   const isActive = ref(false);
+  const router = useRouter();
   const handleScroll = () => {
     if (window.pageYOffset > 200) {
       isActive.value = true;
@@ -19,7 +21,7 @@
 
 <template>
   <div class="scrollTop">
-    <a href="#hero">
+    <a :href="isActive ? '#hero' : '#footer'">
       <img
         src="@/assets/icon/arrow-circle-up.png"
         alt="circle-up"
